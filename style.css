@@ -1,0 +1,115 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-image: url(/assets/img/seamless-1657465_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #3d1700;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 4vh 5vw;
+    position: absolute;
+    z-index: 1;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+
+#sobre{
+    display: flex;
+    padding: 4vh 5vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 55vh;
+    gap: 1rem;
+}
+
+.ft-pessoal{
+    border: solid;
+
+}
+
+h1{
+    font-size: 5rem;  
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+}
+
+#Projetos{
+    display: flex;
+    padding: 4vh 5vw;
+}
+
+.nav2{
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.Proj-img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vw;
+    border: solid;
+}
+
+#Contato{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 25vh;  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    border: 5px solid;
+    padding: 30px;  
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    padding: 0 10vw
+}
+
+.form p{
+    display: flex;
+    align-items: center;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    height: 5rem;
+    border: solid;
+}
