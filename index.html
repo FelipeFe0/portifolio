@@ -6,6 +6,10 @@
     <meta name="author" content="Felipe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
     <title>Portfolio.com</title>
 </head>
 <body>
@@ -13,6 +17,7 @@
     <header>
     <nav>
     <ul>
+        <li><a href="">Ínicio</a></li>
         <li><a href="">Sobre</a></li>
         <li><a href="">Projetos</a></li>
         <li><a href="">Contato</a></li>
@@ -23,24 +28,34 @@
    
 
     <main>
-        
+
+    <section id="inicio">
+
+       <h1>Felipe Fernando de Jesus Silva</h1>
+       <h2>Estudante de programação💻</h2>
+
+    </section>
+
     <section id="sobre">
 
     <div class="apresentação"> 
-        <h1>Feipe Silva</h1>
-        <h2>Estudante de programação💻</h2>
+
         <p>Estudante de programação web, em constante aprendizado na criação de sites criativos, funcionais e otimizados para uma melhor experiência do usuário.</p>
+        
     </div>
     
-    <div class="ft-pessoal">
-        <img src="./assets/img/ft.png" alt="foto" width="350">
+    <div id="ft-pessoal">
+        <img src="./assets/img/ftpe.jpg" alt="foto">
     </div>
     
     </section>
         
     <section id="Projetos">
 
-    <h2>Veja meus projetos</h2>
+      <div id="projetosh2"> 
+    <h2>Veja meus projetos <i class="ri-search-line"></i></h2>
+      </div>
+
         <nav class="nav2"> 
              
          
@@ -48,14 +63,14 @@
         <a href="" target="_blank">
             <img src="./assets/img/amazon-prime-logo.jpg" alt="" width="500" >
         </a>
-        <h2 class="h2">Header Prime</h2>
+        <h3 class="h2">Header Prime</h3>
         </div>
 
         <div class="Proj-img"> 
         <a href="">
             <img src="./assets/img/Logomarca-Shopee-divulgacao-2021-digital-money-informe.jpg" alt="" width="500px" >
         </a>
-        <h2 class="h2">Header Shopee</h2>
+        <h3 class="h2">Header Shopee</h3>
         </div>
         </nav>
     
@@ -65,17 +80,17 @@
 
             <div class="form"> 
             <form action="">
-                <label for="">Nome</label>
+                <label for="">Nome<i class="ri-user-line"></i></label>
                 <br>
-                <input type="text">
+                <input type="text" placeholder="Digite seu nome">
                 <br>
-                <label for="">e-mail</label>
+                <label for="">e-mail<i class="ri-mail-line"></i></label>
                 <br>
-                <input type="text">
+                <input type="text" placeholder="Digite seu E-mail">
                 <br>
-                <label for="">Mensagem</label>
+                <label for="">Mensagem<i class="ri-chat-3-fill"></i></label>
                 <br>
-                <input type="text">
+                <input type="text" placeholder="Assunto...">
                 <br>
                 <button type="submit">enviar</button>
             </form>
