@@ -19,7 +19,7 @@ header{
 ul{
     display: flex;
     list-style: none;
-    gap: 5rem;
+    gap: 5vh;
 }
 
 a{
@@ -74,17 +74,17 @@ p{
 
 .container-img{
     
-    width: 400px;  
+    width: 350px;  
     border-radius: 50px;
     margin-left: auto;   
     margin-bottom: 0rem; 
-    border: 4px solid #3d1700;
     object-fit: cover;
 }
 
 .container-img > img {
     width: 100%;
     border-radius: 50px;
+    border: 4px solid #3d1700;
 
 }
 
