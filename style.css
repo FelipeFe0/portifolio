@@ -24,8 +24,21 @@ ul{
 
 a{
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2.5vw;
     color: aliceblue;
+}
+
+h1{
+    font-size: 5vw;  
+}
+
+h2{
+    font-size: 3vw;
+}
+
+p{
+    margin-top: 1.5rem;
+    font-size: 4vw;
 }
 
 #inicio{
@@ -37,6 +50,7 @@ a{
     align-items: center;
     position: relative;
     height: 60vh;
+    width: 100%;
     gap: 1rem;
     flex-direction: column;
 }
@@ -47,82 +61,106 @@ a{
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
     height: 80vh;
     gap: 1rem;
-    background: linear-gradient(140deg,rgba(221, 201, 150, 1) 52%, rgba(83, 39, 40, 1) 100%, rgba(255, 214, 163, 1) 83%);
+    background: linear-gradient(140deg,rgba(83, 39, 40, 1) 0%, rgba(255, 214, 163, 1) 35%, rgba(255, 214, 163, 1) 17%);
     border: solid #3d1700;
 }
 
-#sobre p{
-    font-size: 5rem;
+.apresentacao{
+    width: 50%;
 }
 
-#sobre img{
-    display: block; 
-    width: 24rem;  
-    height: 24rem;
+.container-img{
+    
+    width: 400px;  
     border-radius: 50px;
     margin-left: auto;   
     margin-bottom: 0rem; 
-    border: 3px solid #3d1700;
+    border: 4px solid #3d1700;
     object-fit: cover;
 }
 
+.container-img > img {
+    width: 100%;
+    border-radius: 50px;
 
-h1{
-    font-size: 5rem;  
 }
 
-h2{
-    font-size: 3rem;
+#sobre p{
+    font-size: 4vw;
+    align-items: center;
 }
 
-p{
-    margin-top: 1.5rem;
-    font-size: 2.5rem;
+#borda-sobre{
+    display: flex;
+    border-style:dashed;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%;
+    flex-wrap: wrap;
 }
+
 
 #Projetos{
     display: flex;
     padding: 4vh 5vw;
-    background: linear-gradient(140deg,rgba(83, 39, 40, 1) 0%, rgba(255, 214, 163, 1) 35%, rgba(255, 214, 163, 1) 17%);
-    background-size: cover;
-    padding: 15vh;
+    width: 100%;
+    background: linear-gradient(140deg,rgba(221, 201, 150, 1) 52%, rgba(83, 39, 40, 1) 100%, rgba(255, 214, 163, 1) 83%);
     border: solid #3d1700;
-    height: 100%;
+    justify-content: center;
 }
 
-.nav2{
+#nav-projetos{
     display: flex;
-    gap: 10rem;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
+
+.click-projetos1{
+    display: flex;
+    width: 33%;
+    margin-top: 15vw;
+    transform: rotate(120deg);
+}
+
+.click-projetos2{
+    display: flex;
+    width: 33%;
+    margin-top: 18vw;
+    transform: rotate(120deg);
 }
 
 .Proj-img{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 20vw;
+    width: 33%;
+    margin-top: 15vw;
     border: solid;
     background-color: #3d1700;
     border-radius: 50px;
 }
 
+.container-projects{
+    display: flex;
+}
+
 #Projetos img{
     display: flex;
-    width: 40rem;
-    height: 25rem;
+    width: 100%;
     align-items: center;
-    
     border-radius: 50px;
 }
 
 #Projetos h2{
     color: aliceblue;
-    background-color: #3d1700;
+    width: 33%;
     border-radius: 10px;
-    padding: 0.5rem;
+    padding: 1.5vh 1.5vw;
+    width: 100%;
+   
 }
 
 #Projetos h3{
@@ -137,9 +175,10 @@ p{
 #Contato{
     display: flex;
     padding: 15vh;
+    width: 100%;
     flex-direction: column;
     gap: 5vh;
-    background: linear-gradient(140deg,rgba(221, 201, 150, 1) 52%, rgba(83, 39, 40, 1) 100%, rgba(255, 214, 163, 1) 83%);
+    background: linear-gradient(140deg,rgba(83, 39, 40, 1) 0%, rgba(255, 214, 163, 1) 35%, rgba(255, 214, 163, 1) 17%);
     border: solid #3d1700;
       
 }
@@ -148,12 +187,12 @@ form{
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
-    border: 5px solid;
+    border-style:dashed;
     border-radius: 50px;
     font-size: 3rem;
     padding: 2rem;
-    width: 40rem;
-    height: 55rem; 
+    width: 40%;
+    
 }
 
 .form{
@@ -164,13 +203,13 @@ form{
 }
 
 input{
-    height: 15rem;
+    height: 5vW;
     border-radius: 10px;
     border: solid #3d1700;
 }
 
 button{
-    height: 15rem;
+    height: 5vw;
     background-color: #3d1700;
     border-radius: 10px;
     color: aliceblue;
@@ -180,6 +219,7 @@ button{
 .form p{
     display: flex;
     align-items: center;
+    width: 40%;
     font-size: 5rem;
 }
 
@@ -188,7 +228,20 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5rem;
+    width: 100%;
     background-color: #3d1700;
     color: aliceblue;
+}
+
+
+/* === Responsividade === */
+
+@media(max-width: 480px){
+    header{
+        align-items: center;
+        width: 100%;
+    }
+    section{
+        align-items: center;
+    }
 }
